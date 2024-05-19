@@ -1,0 +1,86 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #0056b3;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header-content h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.header-content p {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+.letters-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.letters-section h2 {
+    margin-top: 0;
+    font-size: 1.8em;
+    color: #0056b3;
+}
+
+.letters-section p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.letters-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.letters-list li {
+    margin: 10px;
+}
+
+.letter-link {
+    display: block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.letter-link:hover {
+    background-color: #0056b3;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
