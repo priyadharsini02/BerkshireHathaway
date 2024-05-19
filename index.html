@@ -9,9 +9,9 @@
 <body>
     <header class="header fixed-header">
         <div class="header-content">
-          <div class="left-content">
-            <h1><span class="bh">B</span>erkshire <span class="bh">H</span>athaway</h1>
-          </div>
+          <button class="berkshire-hathaway-button">
+            Berkshire Hathaway
+          </button>
           <div class="address-card">
             <address class="address-card1">
               3555 Farnam Street<br>
@@ -29,25 +29,17 @@
         <section class="grid-item"> 
             <!-- Message Section -->
             <div class="message-content">
-              <h3>A Message from Warren E. Buffett</h3>
+              <h3 class="shine1">A Message from Warren E. Buffett</h3>
               <p>You probably know that I don't make stock recommendations. However, I have two thoughts regarding your personal expenditures that can save you real money. I'm suggesting .....</p>
-              <a href="message.html" class="custom-button">
-                Read more
-                <div class="custom-icon">
-                  <svg
-                    height="24"
-                    width="24"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M0 0h24v24H0z" fill="none"></path>
-                    <path
-                      d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-                      fill="currentColor"
-                    ></path>
-                  </svg>
-                </div>
-              </a>
+              <a id="openModal" class="custom-button">
+            Read more
+            <div class="custom-icon">
+              <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path>
+              </svg>
+            </div>
+          </a>
               
             </div>
             <div class="image-content">
@@ -61,6 +53,31 @@
   </main>
 
   <hr>
+
+  <!-- Modal Structure -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <h3 class="modal-heading">A Message From Warren E. Buffett, CEO of Berkshire Hathaway Inc.</h3>
+      <p class="modal-message">Dear Reader,<br>
+        You probably know that I don't make stock recommendations. 
+        However, I have two thoughts regarding your personal expenditures that can save you real money. 
+        I'm suggesting that you call on the services of two subsidiaries of Berkshire: <b>GEICO and Borsheim's.</b> <br><br>
+        I estimate that about <b>40%</b> of all auto drivers in the country can save money by insuring with GEICO. 
+        The figure is not 100% because insurers differ in their underwriting judgments, with some favoring drivers who live in certain geographical areas and work in certain occupations more than GEICO does. 
+        I believe, however, that GEICO more frequently offers the low price than does any other national carrier selling insurance to all comers. 
+        You can quickly find out whether you can save money by going to <b>www.geico.com</b> or by calling <b>800-555-2756.</b> <br><br>
+        Fine jewelry, watches and giftware will almost certainly cost you less at Borsheim's. 
+        I've looked at the figures for all publicly-owned jewelry companies and the contrast with Borsheim's is startling. 
+        Our one-store operation, with its huge volume, enables us to operate with costs that are fully 15-20 percentage points below those incurred by our competitors. 
+        We pass the benefits of this low-cost structure along to our customers. <br><br>
+        Every year Borsheim's sends out thousands of selections to customers who want a long-distance opportunity to inspect what it offers and decide which, if any, item they'd like to purchase. 
+        We do a huge amount of business in this low-key way, which allows the shopper to conveniently see the exceptional values that we offer. 
+        Call Sean Moore or Karen Goracke at Borsheim's (800-642-4438) and save substantial money on your next purchase of jewelry.</p>
+        <p class="modal-message" style="text-align: right;">Sincerely, <br>
+         <p class="modal-message-signature" style="text-align: right;">Warren E. Buffett </p></p>
+    </div>
+  </div>
 
   <!-- Letters -->
   <!-- <h1>Letters and connections</h1> -->
@@ -245,6 +262,7 @@
     <p><a href="https://www.berkshirehathaway.com/disclaimer.html">Legal Disclaimer</a></p>
     <p class="copyright">Copyright &copy; 1978-2024 Berkshire Hathaway Inc.</p>
   </footer>
+  <script src="script.js"></script>
   
 </body>
 </html>
