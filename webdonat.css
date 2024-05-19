@@ -9,7 +9,7 @@ body {
 
 /* Header styles */
 header {
-    background-color: #0056b3;
+    background-color: #32012F;
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -40,7 +40,7 @@ main {
 .letters-section h2 {
     margin-top: 0;
     font-size: 1.8em;
-    color: #0056b3;
+    color: #32012F;
 }
 
 .letters-section p {
@@ -62,7 +62,7 @@ main {
 
 .letter-link {
     display: block;
-    background-color: #007bff;
+    background-color: #F97300;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -71,7 +71,7 @@ main {
 }
 
 .letter-link:hover {
-    background-color: #0056b3;
+    background-color: #cf6202;
 }
 
 /* Footer styles */
@@ -83,4 +83,8 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+.letters-section .imp{
+    color: #32012F;
 }
