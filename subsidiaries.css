@@ -9,33 +9,66 @@
   
   /* Glassmorphism Effect */
   .header {
-    background-color: rgba(0, 0, 0, 0.349); /* Semi-transparent black */
-    backdrop-filter: blur(14px); /* Blur effect */
+    background-color: #ffb338a9; /* Semi-transparent black */
+    backdrop-filter: blur(6px); /* Blur effect */
   }
   
-  /* Header Content */
-  .header-content {
+   /* Header Content */
+   .header-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 10px 30px;
   }
   
-  /* Left Content (Company Name and Description) */
-  .left-content {
-    color: white;
-  }
+  /* Company name */
   
-  .left-content h1 {
-    font-size: 2em;
-    font-weight: normal;
+  :root {
+    --gold: #ffb338;
+    --light-shadow: #77571d;
+    --dark-shadow: #3e2904;
   }
-  
-  .bh {
-    font-weight: bold;
-    font-size: 1.1em;
+  body {
+    margin: 0;
   }
-
+  .wrapper {
+    display: grid;
+    grid-template-areas: 'overlap';
+    place-content: center;
+    text-transform: uppercase;
+    height: 130px;
+  }
+  .wrapper > div {
+    background-clip: text;  
+    -webkit-background-clip: text;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: clamp( 1em, 9vw, 5rem);
+    grid-area: overlap;
+    letter-spacing: 1px;
+    -webkit-text-stroke: 4px transparent;
+  }
+  div.bg {
+    background-image: repeating-linear-gradient( 105deg, 
+      var(--gold) 0% , 
+      var(--dark-shadow) 5%,
+      var(--gold) 12%);
+    color: transparent;
+    filter: drop-shadow(5px 15px 15px black);
+    transform: scaleY(1.05);
+    transform-origin: top;
+  }
+  div.fg{
+    background-image: repeating-linear-gradient( 5deg,  
+      var(--gold) 0% , 
+      var(--light-shadow) 23%, 
+      var(--gold) 31%);
+    color: #1e2127;
+    transform: scale(1);
+  }
+   
+     
+   
 
 /* Base styles */
 body {
@@ -50,12 +83,12 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 20px;
+    padding: 80px;
 }
 
 /* Button styles */
 .button {
-    --color: #560bad;
+    --color: #32012F;
     font-family: inherit;
     display: inline-block;
     width: auto;
@@ -100,7 +133,7 @@ body {
 }
 
 .button:active:before {
-    background: #3a0ca3;
+    background: #66025f;
     transition: background 0s;
 }
 
