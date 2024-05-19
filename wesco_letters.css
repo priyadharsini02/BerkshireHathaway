@@ -3,14 +3,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-color: #524c427a;
     color: #333;
 }
 
 /* Header styles */
 header {
-    background-color: #0056b3;
-    color: white;
+    background-color: #32012F;
+    color: #E2DFD0;
     padding: 20px 0;
     text-align: center;
 }
@@ -40,7 +40,7 @@ main {
 .letters-section h2 {
     margin-top: 0;
     font-size: 1.8em;
-    color: #0056b3;
+    color: #32012F;
 }
 
 .letters-section p {
@@ -62,7 +62,7 @@ main {
 
 .letter-link {
     display: block;
-    background-color: #007bff;
+    background-color: #F97300;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -71,5 +71,5 @@ main {
 }
 
 .letter-link:hover {
-    background-color: #0056b3;
+    background-color: #cf6202;
 }
